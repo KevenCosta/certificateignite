@@ -54,7 +54,8 @@ const serverlessConfiguration: AWS = {
       target: 'node14',
       define: { 'require.resolve': undefined },
       platform: 'node',
-      concurrency: 10,
+      concurrency: 10
+      //,external: ["chrome-aws-lambda"]
     },
     dynamodb: {
       stages: ["dev", "local"],
