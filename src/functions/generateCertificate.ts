@@ -95,7 +95,7 @@ export const handler: APIGatewayProxyHandler = async (event)=>{
     // }).promise();
 
     await s3.putObject({
-        Bucket: "certificateignite129",
+        Bucket: "certificateignite139",
         Key: `${id}.pdf`,
         ACL: "public-read",
         Body: pdf,
